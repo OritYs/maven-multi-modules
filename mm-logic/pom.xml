@@ -15,7 +15,6 @@
         <dependency>
             <groupId>com.course.mm</groupId>
             <artifactId>mm-resource-creator</artifactId>
-            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
