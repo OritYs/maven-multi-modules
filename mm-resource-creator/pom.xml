@@ -12,6 +12,10 @@
 
     <artifactId>mm-resource-creator</artifactId>
 
+    <properties>
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>javax.xml.bind</groupId>
