@@ -119,6 +119,7 @@
 
         <profile>
             <id>packagecloud-profile</id>
+
             <distributionManagement>
                 <repository>
                     <id>packagecloud-release</id>
