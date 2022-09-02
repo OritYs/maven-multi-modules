@@ -3,7 +3,7 @@
     <parent>
         <artifactId>mm-parent</artifactId>
         <groupId>com.course.mm</groupId>
-        <version>1.3.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
