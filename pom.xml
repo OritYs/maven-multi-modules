@@ -95,21 +95,41 @@
         </plugins>
     </build>
 
-    <repositories>
-        <repository>
-            <id>nexus-group</id>
-            <url>http://localhost:8081/repository/maven-public</url>
-        </repository>
-    </repositories>
+    <profiles>
+        <profile>
+            <id>nexus-profile</id>
+            <repositories>
+                <repository>
+                    <id>nexus-group</id>
+                    <url>http://localhost:8081/repository/maven-public</url>
+                </repository>
+            </repositories>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>nexus-snapshot</id>
-            <url>http://localhost:8081/repository/maven-snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>nexus-release</id>
-            <url>http://localhost:8081/repository/maven-releases</url>
-        </repository>
-    </distributionManagement>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>nexus-snapshot</id>
+                    <url>http://localhost:8081/repository/maven-snapshots</url>
+                </snapshotRepository>
+                <repository>
+                    <id>nexus-release</id>
+                    <url>http://localhost:8081/repository/maven-releases</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+
+        <profile>
+            <id>packagecloud-profile</id>
+            <distributionManagement>
+                <repository>
+                    <id>packagecloud-release</id>
+                    <url>packagecloud+https://packagecloud.io/maven-course/release</url>
+                </repository>
+                <snapshotRepository>
+                    <id>packagecloud-snapshot</id>
+                    <url>packagecloud+https://packagecloud.io/maven-course/snaphshot</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+    </profiles>
+
 </project>
