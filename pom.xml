@@ -19,12 +19,6 @@
         <module>mm-logic</module>
     </modules>
 
-    <scm>
-        <developerConnection>scm:git:https://github.com/OritYs/maven-multi-modules.git</developerConnection>
-        <url>https://github.com/OritYs/maven-multi-modules.git</url>
-        <tag>MVN01</tag>
-    </scm>
-
     <properties>
         <revision>master-1.3.2-SNAPSHOT</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,6 +29,12 @@
         <lombok.version>1.18.24</lombok.version>
         <jaxb.version>2.3.0</jaxb.version>
     </properties>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/OritYs/maven-multi-modules.git</developerConnection>
+        <url>https://github.com/OritYs/maven-multi-modules.git</url>
+        <tag>MVN01</tag>
+    </scm>
 
     <dependencyManagement>
         <dependencies>
