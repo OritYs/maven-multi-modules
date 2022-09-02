@@ -12,10 +12,5 @@
             <id>packagecloud-snapshot</id>
             <password>${env.PCLOUD}</password>
         </server>
-        <server>
-            <id>github</id>
-            <username>oritYs</username>
-            <password>${env.GIT_PWD}</password>
-        </server>
     </servers>
 </settings>
